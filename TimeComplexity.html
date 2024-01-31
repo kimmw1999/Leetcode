@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Length of Input&lpar;N&rpar;</th>
+                    <th>Worst Accepted Algorithm</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>&le;[10..11]</td>
+                    <td>O&lpar;N!&rpar;, O&lpar;N<sup>6</sup>&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;[15..18]</td>
+                    <td>O&lpar;2<sup>N</sup>*N<sup>2</sup>&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;[18..22]</td>
+                    <td>O&lpar;2<sup>N</sup>*N&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;[100]</td>
+                    <td>O&lpar;N<sup>4</sup>&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;[400]</td>
+                    <td>O&lpar;N<sup>3</sup>&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;2K</td>
+                    <td>O&lpar;N<sup>2</sup>*logN&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;10K</td>
+                    <td>O&lpar;N<sup>2</sup>&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;1M</td>
+                    <td>O&lpar;N*logN&rpar;</td>
+                </tr>
+                <tr>
+                    <td>&le;100M</td>
+                    <td>O&lpar;N&rpar;, O&lpar;logN&rpar;, O&lpar;1&rpar;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+    <div style="white-space: pre-wrap;">
+        Let n be the main variable in the problem.
+
+If n ≤ 12, the time complexity can be O(n!).
+If n ≤ 25, the time complexity can be O(2<sup>n</sup>).
+If n ≤ 100, the time complexity can be O(n<sup>4</sup>).
+If n ≤ 500, the time complexity can be O(n<sup>3</sup>).
+If n ≤ 10<sup>4</sup>, the time complexity can be O(n<sup>2</sup>).
+If n ≤ 10<sup>6</sup>, the time complexity can be O(n log n).
+If n ≤ 10<sup>8</sup>, the time complexity can be O(n).
+If n > 10<sup>8</sup>, the time complexity can be O(log n) or O(1).
+Examples of each common time complexity
+
+O(n!) [Factorial time]: Permutations of 1 ... n
+O(2<sup>n</sup>) [Exponential time]: Exhaust all subsets of an array of size n
+O(n<sup>3</sup>) [Cubic time]: Exhaust all triangles with side length less than n
+O(n<sup>2</sup>) [Quadratic time]: Slow comparison-based sorting (eg. Bubble Sort, Insertion Sort, Selection Sort)
+O(n log n) [Linearithmic time]: Fast comparison-based sorting (eg. Merge Sort)
+O(n) [Linear time]: Linear Search (Finding maximum/minimum element in a 1D array), Counting Sort
+O(log n) [Logarithmic time]: Binary Search, finding GCD (Greatest Common Divisor) using Euclidean Algorithm
+O(1) [Constant time]: Calculation (eg. Solving linear equations in one unknown)
+    </div>
+</html>
